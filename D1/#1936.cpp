@@ -1,3 +1,4 @@
+// 1936. 1대1 가위바위보
 #include <iostream>
 using namespace std;
 int main() {
