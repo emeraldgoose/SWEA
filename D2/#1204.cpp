@@ -2,9 +2,9 @@
 #include <iostream>
 using namespace std;
 int main() {
- 	int testCase, a, testnum;
+  int testCase, a, testnum;
   cin>>testCase;
- 	for(a=1;a<=testCase;a++) {
+  for(a=1;a<=testCase;a++) {
       int i, num;
       int cnt[101], max=0, res;
       cin>>testnum;
