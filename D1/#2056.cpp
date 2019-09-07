@@ -3,7 +3,7 @@
 #include <cstdio>
 using namespace std;
 int main() {
- 	int testCase, tc;
+    int testCase, tc;
     cin>>testCase;
     for(tc=1;tc<=testCase;tc++) {
         int rt=0, seq, year, month, day;
