@@ -7,5 +7,5 @@ int main() {
     cin>>str;
     for(int i=0;i<str.length();i++) cout<<str[i]-64<<" ";
     cout<<'\n';
- 	return 0;   
+    return 0;   
 }
