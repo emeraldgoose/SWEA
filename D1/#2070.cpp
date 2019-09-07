@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 int main() {
- 	int testCase, tc;
+    int testCase, tc;
     cin>>testCase;
     for(tc=1;tc<=testCase;tc++) {
         char result;
