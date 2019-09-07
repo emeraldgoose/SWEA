@@ -7,7 +7,7 @@ int main() {
     for(tc=1;tc<=testCase;tc++) {
         char result;
         int num1, num2;
-   		cin>>num1>>num2;
+   		   cin>>num1>>num2;
         if(num1 > num2) result = '>';
         else if(num1 < num2) result = '<';
         else result = '=';
