@@ -16,13 +16,12 @@ int main() {
                 sum+=num2; flag=1; num2+=2*k;
             }
         }
+        cout<<"#"<<a<<" ";
         if((n%2)==0) {
-            cout<<"#"<<a<<" ";
             for(i=1;i<=k;i++)
                 cout<<sum<<" ";
         }
         else {
-            cout<<"#"<<a<<" ";
             for(i=0;i<k;i++)
                 cout<<sum+i<<" ";
         } cout<<'\n';
