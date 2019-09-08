@@ -1,14 +1,13 @@
 // 8338. 계산기
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
 int main() {
     int testCase, a, i;
     scanf("%d",&testCase);
     for(a=1;a<=testCase;a++) {
         int n, arr[9], sum=0;
         scanf("%d",&n);
-        for(i=0;i<n;i++)
-            scanf("%d",&arr[i]);
+        for(i=0;i<n;i++) scanf("%d",&arr[i]);
         for(i=0;i<n;i++) {
             if(i==0 || sum==0 || sum==1) sum += arr[i];
             else {
