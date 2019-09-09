@@ -27,11 +27,11 @@ int main() {
             for(j=0;j<100;j++) temp[j]=ch[i][j];
             num=2;
             while(num!=99) {
-	            if(check(temp,num)) {
-                    if(num>max) max=num;
+	        if(check(temp,num)) {
+                   if(num>max) max=num;
                 }
-        	    num++;
-        	}
+                num++;
+            }
         }
         for(i=0;i<100;i++) {
             for(j=0;j<100;j++) temp[j]=ch[j][i];
@@ -41,7 +41,7 @@ int main() {
                     if(num>max) max=num;
                 }
     	        num++;
-        	}
+            }
         }
         cout<<"#"<<tar<<" "<<max<<endl;
     }
