@@ -14,11 +14,11 @@ int main() {
             sum_k=0, sum_t=0;
             for(j=0; j<N; j++) {
                 if(i & ( 1 << j)) {
-					sum_k+=arr_k[j]; sum_t+=arr_t[j];
+		   sum_k+=arr_k[j]; sum_t+=arr_t[j];
                 }
             }
             if(sum_k<L) {
-                if(sum_t>max) max=sum_t;
+               if(sum_t>max) max=sum_t;
             }
         }
         cout<<"#"<<a<<" "<<max<<endl; delete[] arr_k; delete[] arr_t;
