@@ -11,7 +11,8 @@ int main() {
         int p=2, cnt=0;
         while(1) {
             for(int k=0;k<p;k++) {
-                if(txt[k]==txt[k+p]) cnt++;}
+                if(txt[k]==txt[k+p]) cnt++;
+            }
             if(cnt==p) break;
             cnt=0, p++;
         }
