@@ -10,7 +10,7 @@ int main() {
     for(i=1;i<=testCase;i++) {
         int j, k, n;
         scanf("%d",&n);
- 		printf("#%d\n",i);
+        printf("#%d\n",i);
         for(j=0;j<n;j++) {
             for(k=0;k<=j;k++) printf("%d ",solve(j,k));
             printf("\n");
