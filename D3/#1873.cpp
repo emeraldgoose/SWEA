@@ -1,5 +1,3 @@
-// 1873. 상호의 배틀필드
-// 배틀필드1 하고싶다. 
 #include <cstdio>
 #include <iostream>
 #include <cstring>
@@ -14,7 +12,6 @@ int main() {
         for(int i=0;i<H;i++) field[i] = new char[W];
         // input
         for(int i=0;i<H;i++) scanf("%s",field[i]);
-
         // user search
         int ux, uy;
         for(int i=0;i<H;i++) {
@@ -24,7 +21,6 @@ int main() {
                 }
             }
         }
-        
         // play game
         scanf("%d",&N);
         string ch;
@@ -32,7 +28,7 @@ int main() {
         for(int i=0;i<N;i++) {
             if(ch[i]=='U') {
                 ux--;
-                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]=='-' || field[ux][uy]=='#' || field[ux][uy]=='*') {
+                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]!='.') {
                     ux++; field[ux][uy]='^'; continue;
                 }
                 else {
@@ -41,7 +37,7 @@ int main() {
             }
             else if(ch[i]=='D') {
                 ux++;
-                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]=='-' || field[ux][uy]=='#' || field[ux][uy]=='*') {
+                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]!='.') {
                     ux--; field[ux][uy]='v'; continue;
                 }
                 else {
@@ -50,7 +46,7 @@ int main() {
             }
             else if(ch[i]=='L') {
                 uy--;
-                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]=='-' || field[ux][uy]=='#' || field[ux][uy]=='*') {
+                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]!='.') {
                     uy++; field[ux][uy]='<';continue;
                 }
                 else {
@@ -59,7 +55,7 @@ int main() {
             }
             else if(ch[i]=='R') {
                 uy++;
-                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]=='-' || field[ux][uy]=='#' || field[ux][uy]=='*') {
+                if(ux<0 || ux>(H-1) || uy<0 || uy>(W-1) || field[ux][uy]!='.') {
                     uy--; field[ux][uy]='>'; continue;
                 }
                 else {
@@ -105,14 +101,12 @@ int main() {
                 }
             }
         }
-        
         // output
-        printf("#%d \n",a);
+        printf("#%d ",a);
         for(int i=0;i<H;i++) {
             for(int j=0;j<W;j++) printf("%c",field[i][j]);
             printf("\n");
         }
-        
         // 동적할당 해제
         for(int i=0;i<H;i++) delete[] field[i];
         delete[] field;
