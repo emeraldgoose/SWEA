@@ -1,3 +1,5 @@
+// 1873. 상호의 배틀필드
+// 배틀필드1 하고싶다. 
 #include <cstdio>
 #include <iostream>
 #include <cstring>
