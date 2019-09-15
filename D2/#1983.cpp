@@ -8,7 +8,7 @@ int main() {
     char score[10][2]={{'A','+'},{'A','0'},{'A','-'},{'B','+'},{'B','0'},{'B','-'},{'C','+'},{'C','0'},{'C','-'},{'D','0'}};
     cin>>testCase;
     for(a=1;a<=testCase;a++) {
-		int N, target;
+        int N, target;
         cin>>N>>target;
         vector<int> v;
         int k, n, m;
