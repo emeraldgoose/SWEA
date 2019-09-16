@@ -4,9 +4,9 @@
 #include <vector>
 using namespace std;
 int main() {
-	int tc;
-	for (tc = 1; tc <= 10; tc++) {
-		int i, n; char ch;
+    int tc;
+    for (tc = 1; tc <= 10; tc++) {
+        int i, n; char ch;
         stack<char> s;
     	vector<char> v;
         cin>>n;
@@ -19,7 +19,7 @@ int main() {
                 s.push(ch);
             }
             else v.push_back(ch);
-		}
+        }
         v.push_back(s.top()); s.pop();
         stack<int> s2;
         for(i=0;i<n;i++) {
@@ -32,5 +32,5 @@ int main() {
         }
         cout<<"#"<<tc<<" "<<s2.top()<<endl;
     }
-	return 0;
+    return 0;
 }
