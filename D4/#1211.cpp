@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 int main() {
-	int tc=10;
+    int tc=10;
     while(tc--) {
         int i, j, N, start, cnt, min=1000, sd[100][100];
         cin>>N;
