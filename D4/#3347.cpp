@@ -22,8 +22,8 @@ int main() {
         }
         int max=0, idx;
         for(i=0;i<N;i++) {
-			if(cnt[i]>max) {
-				max=cnt[i]; idx=i;
+            if(cnt[i]>max) {
+               max=cnt[i]; idx=i;
             }
         }
         cout<<"#"<<a<<" "<<idx+1<<endl;
