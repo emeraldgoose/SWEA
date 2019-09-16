@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 int main() {
-	int testCase, a;
+    int testCase, a;
     cin>>testCase;
     for(a=1;a<=testCase;a++) {
         int N, K;
