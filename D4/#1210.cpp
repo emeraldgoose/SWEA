@@ -5,10 +5,10 @@ using namespace std;
 int main() {
     int tc;
     for(tc=1;tc<=10;tc++) {
-		int i, j, x, N, sd[100][100];
+        int i, j, x, N, sd[100][100];
         cin>>N;
         for(i=0;i<100;i++) {
-			for(j=0;j<100;j++) cin>>sd[i][j];
+            for(j=0;j<100;j++) cin>>sd[i][j];
         }
         for(i=0;i<100;i++) {
             if(sd[99][i]==2) x=i;
