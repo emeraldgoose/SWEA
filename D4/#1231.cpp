@@ -12,7 +12,7 @@ void inorder(int root) {
 int main() {
     int tc;
     for(tc=1; tc<=10; tc++) {
- 		int i, s, tmp1, tmp2;
+        int i, s, tmp1, tmp2;
         cin>>n;
         for(i=1;i<=n;i++) {
             cin>>s>>tree[i];
