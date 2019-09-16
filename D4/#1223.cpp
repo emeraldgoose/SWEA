@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 	int tc;
 	for(tc=1;tc<=10;tc++) {
-		int i, n;
+        int i, n;
         stack<char> s;
     	vector<char> v;
         cin>>n;
