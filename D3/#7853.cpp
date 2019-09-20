@@ -10,8 +10,8 @@ int main(){
         string str;
         cin>>str;
         long ans=1;
-		for(int i=0;i<str.length();i++) {
-             if(i==0) {
+        for(int i=0;i<str.length();i++) {
+            if(i==0) {
             	if(str[i]!=str[i+1]) ans*=2;
                 else ans*=1;
             }
@@ -32,4 +32,5 @@ int main(){
         ans%=DIV;
         cout<<"#"<<a<<" "<<ans<<'\n';
     }
+    return 0;
 }
