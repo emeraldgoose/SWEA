@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <cstring>
 using namespace std;
-void transfer(char arr[], int leng) {
+void translate(char arr[], int leng) {
     int k;
     for(k=0;k<leng;k++) {
         if(arr[k]=='A'||arr[k]=='D'||arr[k]=='O'||arr[k]=='P'||arr[k]=='Q'||arr[k]=='R') arr[k]='A';
