@@ -1,41 +1,43 @@
 // 1211. [S/W 문제해결 기본] 2일차 - Ladder2
 #include <iostream>
+#include <cstring>
+#define MAX 100
 using namespace std;
+int map[MAX][MAX];
 int main() {
-    int tc=10;
-    while(tc--) {
-        int i, j, N, start, cnt, min=1000, sd[100][100];
-        cin>>N;
-        for(i=0;i<100;i++) {
-            for(j=0;j<100;j++) cin>>sd[i][j];
+    int t=1;
+    while(t--) {
+        int tc;
+        cin>>tc;
+        memset(map,0,sizeof(map));
+        for(int i=0;i<100;i++) {
+            for(int j=0;j<100;j++) cin>>map[i][j];
         }
-        for(i=0;i<100;i++) {
-            int x=i, y=0;
-            if(sd[0][i]==1) {
-            	cnt=0;
-                while(y<=99) {
-                    if(sd[y][x-1]==1 && x-1>=0) {
-                        while(sd[y][x-1]==1) {
-                            x--; cnt++;
+        int ans, min=500;
+        for(int i=0;i<100;i++) {
+            int x=0;
+            if(map[x][i]) {
+                int y=i;
+                int cnt=0;
+                while(x<99) {
+                    if((y+1)<100 && map[x][y+1]) {
+                        while((map[x][y+1]) && y<99) {
+                            y++; cnt++;
                         }
-                        y++;
                     }
-                    else if(sd[y][x+1]==1 && x+1<=99) {
-                        while(sd[y][x+1]==1) {
-                            x++; cnt++;
+                    else if((y-1)>=0 && map[x][y-1]) {
+                        while((map[x][y-1]) && y>0) {
+                            y--; cnt++;
                         }
-                        y++;
                     }
-                    else y++;
+                    x++;
                 }
                 if(cnt<min) {
-                    min=cnt; start=i;
+                   min=cnt, ans=i;
                 }
             }
-        } 
-        if(N==6) start=0; // tc 6번 (0,6)에서가 더 짧게 나옴
-        cout<<"#"<<N<<" "<<start<<endl;
+        }
+        cout<<"#"<<tc<<" "<<ans<<endl;
     }
     return 0;
 }
-    
