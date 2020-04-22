@@ -11,7 +11,7 @@ vector<int> v;
 int dx[]={1,0,-1,0};
 int dy[]={0,1,0,-1};
 vector<int> ans;
-void drop() {
+void drop() { 
     for(int w=1;w<=W;w++) {
         for(int h=H;h>=0;h--) {
             if(cpy_map[h][w]==0) {
