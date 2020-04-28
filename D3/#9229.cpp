@@ -20,7 +20,7 @@ int main() {
         int max=0;
         for(int i=0;i<v.size();i++) {
             if(v[i]>=max) max=v[i];
-        }
+        } 
         if(max==0) cout<<"#"<<a<<" -1"<<endl;
         else cout<<"#"<<a<<" "<<max<<endl;
         delete[] list;
