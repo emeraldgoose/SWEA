@@ -1,4 +1,4 @@
-// 4130. [모의 SW 역량테스트] 특이한 자석
+// 4013. [모의 SW 역량테스트] 특이한 자석
 #include <iostream>
 using namespace std;
 int K;
