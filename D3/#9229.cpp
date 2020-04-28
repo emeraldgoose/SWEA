@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 int main() {
-	int testCase;
+    int testCase;
     cin>>testCase;
     for(int a=1;a<=testCase;a++) {
     	int N, M;
@@ -24,6 +24,6 @@ int main() {
         if(max==0) cout<<"#"<<a<<" -1"<<endl;
         else cout<<"#"<<a<<" "<<max<<endl;
         delete[] list;
-    } 
+    }
     return 0;
 }
