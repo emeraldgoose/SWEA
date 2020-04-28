@@ -15,7 +15,7 @@ void rotation(int n, int dir) { // 1: CW, -1: CCW
         for(int k=0;k<8;k++) magnetic[n][k]=magnetic[n][k+1];
         magnetic[n][7]=tmp;
     }
-} 
+}
 void solve(int n,int dir) {
     int arr[5]={0,0,0,0,0};
     arr[n]=dir;
