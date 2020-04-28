@@ -24,6 +24,6 @@ int main() {
         if(max==0) cout<<"#"<<a<<" -1"<<endl;
         else cout<<"#"<<a<<" "<<max<<endl;
         delete[] list;
-    }
+    } 
     return 0;
 }
