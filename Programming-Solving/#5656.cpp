@@ -1,3 +1,4 @@
+// 5656. [모의 SW 역량테스트] 벽돌 깨기
 #include <iostream>
 #include <cstring>
 #include <vector>
