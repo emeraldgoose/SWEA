@@ -5,15 +5,15 @@
 using namespace std;
 int N;
 struct atom{
-    double x, y;
+    int x, y;
     int dir;
     int K;
     int death;
 } atom[1001];
 int map[4001][4001]; // 원자가 모인 개수
 bool collide[4001][4001];
-double dx[]={0,0,-1,1}; // up, down, left, right
-double dy[]={1,-1,0,0};
+int dx[]={0,0,-1,1}; // up, down, left, right
+int dy[]={1,-1,0,0};
 int ans;
 int cnt_alive;
 int alive[1001]; // 살아았는 원자 번호
